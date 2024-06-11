@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+</head>
+<body>
+    <div class="mx-auto text-8xl">
+        <h1 class="flex justify-center">EDITING PAGE</h1>
+    </div>
+    <div class="flex justify-center items-center h-screen"> 
+        <div id="form_data" class="border border-black rounded-lg p-5 mt-5 bg-white shadow-lg">
+            <input type="text" placeholder="Enter Name and Surname" id="name" name="name" required minlength="3" maxlength="30" class="w-full p-4 mb-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+            <input type="text" placeholder="Image URL" id="image" name="image" required class="w-full p-4 mb-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+            <input type="text" placeholder="Enter Prof" id="prof" name="prof" required class="w-full p-4 mb-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+            <input type="button" onclick="location.href='http://127.0.0.1:5501/index.html';" id="create_user" class="bg-green-500 text-white cursor-pointer p-4 rounded-lg w-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500" value="Create User"/>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
